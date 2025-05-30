@@ -234,6 +234,27 @@ html {
   width: 24px;
 }
 
+/* Places */
+.place-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.place-list .place-item {
+  width: calc(33.3333% - 10px);
+  background: #fff;
+}
+
+.place-list .place-item img {
+  width: 100%;
+}
+
+.place-list .place-body {
+  padding: 16px;
+}
+
 /*footer section*/
 #footer {
 }
