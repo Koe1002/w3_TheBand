@@ -7,16 +7,16 @@ html {
   font-family: Helvetica, Arial, sans-serif;
 }
 /*
-    làm từ ngoài vào trong
-    làm từ trên xuống dưới    
-    từ tổng quan đến chi tiết
-*/
+            làm từ ngoài vào trong
+            làm từ trên xuống dưới    
+            từ tổng quan đến chi tiết
+        */
 /*
-    vị trí
-    kích thước (w, h)
-    màu sắc
-    kiểu dáng (kiểu chữ, hình tròn, vuông...)
-*/
+            vị trí
+            kích thước (w, h)
+            màu sắc
+            kiểu dáng (kiểu chữ, hình tròn, vuông...)
+        */
 
 .clear {
   clear: both;
@@ -127,8 +127,8 @@ html {
   color: #fff;
 
   /*   cách khác:
-        left: 50%;
-        transform: translateX(-50%);*/
+                left: 50%;
+                transform: translateX(-50%);*/
   text-align: center;
 }
 
@@ -283,4 +283,97 @@ html {
 
 /*footer section*/
 #footer {
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-container {
+  background: #fff;
+  width: 900px;
+  min-height: 200px;
+}
+
+header {
+  display: flex;
+  height: 130px;
+  color: #fff;
+  font-size: 30px;
+  align-items: center;
+  background: #009688;
+  justify-content: center;
+}
+
+.modal-container {
+  position: relative;
+}
+
+.modal-container .modal-close {
+  position: absolute;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  right: 0;
+  top: 0;
+}
+
+.modal-container .modal-close:hover {
+  color: #fff;
+}
+
+header .modal-heading-icon {
+  margin-right: 16px;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-body .modal-label {
+  display: block;
+  margin: 15px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.modal-body .modal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.modal-body #buy-tickets {
+  width: 100%;
+  border: none;
+  padding: 16px;
+  color: #fff;
+  margin: 16px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: rgb(0, 150, 136);
+}
+
+.modal-body #buy-tickets:hover {
+  color: #000;
+  background: #ccc;
+}
+
+.modal-footer {
+  padding: 16px;
+  text-align: right;
+}
+
+.modal-footer a {
+  color: #2196f3;
 }
